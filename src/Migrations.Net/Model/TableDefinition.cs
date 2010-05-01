@@ -8,6 +8,8 @@ namespace Migrations.Net.Model
     {
         public TableDefinition(string tableName)
         {
+            if (string.IsNullOrEmpty(tableName)) throw new ArgumentException("tableName");
+
             Name = tableName;
             Columns = new List<ColumnDefinition>();
         }

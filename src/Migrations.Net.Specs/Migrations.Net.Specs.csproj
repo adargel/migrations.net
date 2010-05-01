@@ -44,9 +44,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model\CreateTableStatementSpecs.cs" />
+    <Compile Include="Model\CreateTableSpecs.cs" />
     <Compile Include="Model\MockEngine.cs" />
     <Compile Include="Model\SpecExtensions.cs" />
+    <Compile Include="Model\TableDefinitionSpecs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
