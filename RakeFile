@@ -1,0 +1,8 @@
+require 'albacore'
+
+msbuild :build do |msb|
+	msb.path_to_command.gsub!('v3.5', 'v4.0.30319')
+	msb.solution = 'src\Migrations.Net.sln'
+	msb.targets :Clean, :Build
+	msb.properties :configuration => :Debug
+end
