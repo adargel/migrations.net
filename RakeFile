@@ -1,8 +1,21 @@
 require 'albacore'
 
-msbuild :build do |msb|
-	msb.path_to_command.gsub!('v3.5', 'v4.0.30319')
-	msb.solution = 'src\Migrations.Net.sln'
-	msb.targets :Clean, :Build
-	msb.properties :configuration => :Debug
+specs_report_dir = "./specs_report"
+
+namespace :sources do
+  msbuild :build do |msb|
+	  msb.path_to_command.gsub!('v3.5', 'v4.0.30319')
+	  msb.solution = 'src\Migrations.Net.sln'
+	  msb.targets :Clean, :Build
+	  msb.properties :configuration => :Debug
+  end
+end
+
+namespace :test do 
+  mspec :specs => ["sources:build"]  do |mspec|
+    mkdir specs_report_dir unless Dir::exists?(specs_report_dir)
+    mspec.path_to_command = "lib/mspec/mspec.exe"
+	mspec.assemblies "src/Migrations.Net.Specs/bin/Debug/Migrations.Net.Specs.dll"
+	mspec.html_output = specs_report_dir
+  end
 end
