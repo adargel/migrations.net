@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Definitions\PrimaryKeyColumnSpecs.cs" />
+    <Compile Include="Expressions\ColumnDefinitionExpressionSpecs.cs" />
     <Compile Include="Expressions\CreateTableExpressionSpecs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

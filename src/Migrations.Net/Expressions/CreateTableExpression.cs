@@ -34,7 +34,7 @@ namespace Migrations.Net.Expressions
             Options = options;
 
             if (id) AddPrimaryKeyColumn(primaryKey);
-            if (with != null) with(new ColumnDefinitionExpression());
+            if (with != null) with(new ColumnDefinitionExpression(this));
         }
 
         void AddPrimaryKeyColumn(string keyColName)

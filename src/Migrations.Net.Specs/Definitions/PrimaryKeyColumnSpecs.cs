@@ -19,5 +19,8 @@ namespace Migrations.Net.Specs.Definitions
 
         It sets_identity_to_true = () => 
             primaryKey.IsIdentity.ShouldBeTrue();
+
+        It sets_primary_key_to_true = () =>
+            primaryKey.IsPrimaryKey.ShouldBeTrue();
     }
 }
