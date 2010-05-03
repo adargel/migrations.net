@@ -13,4 +13,4 @@ build
 *.cache
 *~
 *.swp
-reports
+specs_report
