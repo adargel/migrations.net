@@ -31,7 +31,7 @@ namespace Migrations.Net.Model
 
         public void Column(string name, Type type, bool identity = false)
         {
-            Columns.Add(new ColumnDefinition(name) { IsIdentity = identity, Type = type });
+            Columns.Add(new ColumnDefinition(name, type) { IsIdentity = identity });
         }
     }
 }

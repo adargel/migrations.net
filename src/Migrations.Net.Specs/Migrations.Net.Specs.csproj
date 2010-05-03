@@ -44,6 +44,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Definitions\PrimaryKeyColumnSpecs.cs" />
+    <Compile Include="Expressions\CreateTableExpressionSpecs.cs" />
+    <Compile Include="Model\ColumnDefinitionSpecs.cs" />
     <Compile Include="Model\CreateTableSpecs.cs" />
     <Compile Include="Model\Helpers\MockEngine.cs" />
     <Compile Include="Model\Helpers\SpecExtensions.cs" />
