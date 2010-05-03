@@ -5,6 +5,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Migrations.Net", "Migration
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Migrations.Net.Specs", "Migrations.Net.Specs\Migrations.Net.Specs.csproj", "{9C1603A0-5F1F-4633-8F27-75A45935466B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{9E22D751-6A92-4926-8A11-49E69CD8E151}"
+	ProjectSection(SolutionItems) = preProject
+		..\RakeFile = ..\RakeFile
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

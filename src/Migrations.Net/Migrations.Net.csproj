@@ -43,12 +43,7 @@
     <Compile Include="Definitions\PrimaryKeyColumnDefinition.cs" />
     <Compile Include="Expressions\ColumnDefinitionExpression.cs" />
     <Compile Include="Expressions\CreateTableExpression.cs" />
-    <Compile Include="Model\ColumnDefinition.cs" />
-    <Compile Include="Model\ColumnTypes.cs" />
-    <Compile Include="Model\IMigrationEngine.cs" />
-    <Compile Include="Model\Migration.cs" />
-    <Compile Include="Model\MigrationDefinition.cs" />
-    <Compile Include="Model\TableDefinition.cs" />
+    <Compile Include="Definitions\ColumnDefinition.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

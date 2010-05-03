@@ -46,17 +46,12 @@
   <ItemGroup>
     <Compile Include="Definitions\PrimaryKeyColumnSpecs.cs" />
     <Compile Include="Expressions\CreateTableExpressionSpecs.cs" />
-    <Compile Include="Model\ColumnDefinitionSpecs.cs" />
-    <Compile Include="Model\CreateTableSpecs.cs" />
-    <Compile Include="Model\Helpers\MockEngine.cs" />
-    <Compile Include="Model\Helpers\SpecExtensions.cs" />
-    <Compile Include="Model\TableDefinitionSpecs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Migrations.Net\Migrations.Net.csproj">
       <Project>{981CEDE2-EE85-4423-A2ED-41915E638AA8}</Project>
-      <Name>Migrations.Net %28Migrations.Net\Migrations.Net%29</Name>
+      <Name>Migrations.Net</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using Migrations.Net.Definitions;
-using Migrations.Net.Model;
 
 namespace Migrations.Net.Expressions
 {
