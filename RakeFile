@@ -2,6 +2,8 @@ require 'albacore'
 
 specs_report_dir = "./specs_report"
 
+task :default => ["sources:build", "test:specs"]
+
 namespace :sources do
   msbuild :build do |msb|
 	  msb.path_to_command.gsub!('v3.5', 'v4.0.30319')
