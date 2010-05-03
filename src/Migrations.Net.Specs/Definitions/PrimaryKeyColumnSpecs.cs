@@ -4,7 +4,7 @@ using Migrations.Net.Definitions;
 
 namespace Migrations.Net.Specs.Definitions
 {
-    public class PrimaryKeyColumnSpecs
+    public class When_creating_primary_key_column_definition
     {
         static PrimaryKeyColumnDefinition primaryKey;
 
